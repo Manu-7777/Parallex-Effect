@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+    height: 100vh;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    height: 100%;
+    transform-style: preserve-3d; 
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+.background,.foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h1{
+    position: absolute
+    font-size: 9rem;
+    top: 9rem;
+    font-family: sans-serif;
+    
+}
+
+section{
+    background-color: black;
+    padding-inline: 50px;
+    color: white;
+}   
+
+h2{
+    font-size: 4rem;
+    padding-inline: 100px;
+}
+
+
+.bg1{
+    background-image: url(images/bike.jpg);
+}
+
+.bg2{
+    background-image: url(images/paani.jpg);
+}
+
+.bg3{
+    background-image: url(images/hawa.jpg);
+}
+
+.bg{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-size: cover;
+}
+
+.desc{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    background-color: white;
+    text-shadow: 0 0 3px aqua;
+    color: aqua;
+    font-family: sans-serif;
+
+}
+
+.text{
+    font-size: 1.5rem;
+    padding-inline: 100px;
+    font-family: sans-serif;
+}
